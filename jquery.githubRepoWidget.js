@@ -69,6 +69,8 @@
 			+'</div>'
 		);
 
+		// Clear the contents of the div container, allowing fallback text inside if/when the browser has JavaScript disabled:
+                $(this).children('a').remove();
 		$widget.appendTo($container);
 
 		$.ajax({
